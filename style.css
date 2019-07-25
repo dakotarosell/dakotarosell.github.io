@@ -303,7 +303,8 @@ footer hr {
   font-size: 1.1em;
   opacity: .8;
   margin-bottom: 10px;
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .spotlight a:hover {
