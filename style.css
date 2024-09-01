@@ -6,13 +6,12 @@ body {
 }
 
 header {
-    position: relative;
     width: 100%;
 }
 
 .banner {
-    position: relative;
     width: 100%;
+    position: relative; /* For containing the profile image */
 }
 
 .banner img {
@@ -20,11 +19,12 @@ header {
     height: auto;
 }
 
+.profile-image-container {
+    text-align: center; /* Center the profile image */
+    margin-top: -50px; /* Adjust margin to move profile image up or down */
+}
+
 .profile-image {
-    position: absolute;
-    bottom: -20px; /* Slight overlap based on image size */
-    left: 50%;
-    transform: translateX(-50%);
     width: 100px; /* Adjust as needed */
     height: 100px; /* Adjust as needed */
     border-radius: 50%;
