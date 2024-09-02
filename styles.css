@@ -23,7 +23,7 @@ header {
 /* Profile image and social media styles remain the same */
 .profile-image-container {
     text-align: center; /* Center the profile image */
-    margin-top: -50px; /* Adjust margin to move profile image up or down */
+    margin-top: 20px; /* Adjust margin to move profile image down */
 }
 
 .profile-image {
@@ -56,10 +56,10 @@ header {
 
 /* New Navigation Bar Styles */
 .main-nav {
-    background-color: #333; /* Dark background for the nav bar */
+    background-color: black; /* Black background for the nav bar */
+    border: 2px solid white; /* White outline */
     color: white;
-    position: fixed; /* Fix the nav bar at the top */
-    top: 0;
+    position: relative; /* Position relative to the header */
     width: 100%;
     display: flex;
     justify-content: center;
