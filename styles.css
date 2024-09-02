@@ -57,7 +57,7 @@ header {
 /* New media query for wide screens */
 @media (min-width: 768px) {
     .banner img {
-        height: 50vh; /* Set the height to 50% of the viewport height */
-        object-fit: cover; /* Ensures the image covers the area without distortion */
+        height: 30vh; /* Set the height to 50% of the viewport height */
+        object-fit: contain; /* Ensures the image covers the area without distortion */
     }
 }
