@@ -1,3 +1,4 @@
+/* Existing styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -19,6 +20,7 @@ header {
     height: auto;
 }
 
+/* Profile image and social media styles remain the same */
 .profile-image-container {
     text-align: center; /* Center the profile image */
     margin-top: -50px; /* Adjust margin to move profile image up or down */
@@ -50,4 +52,12 @@ header {
 .social-link:hover {
     background-color: #333; /* Dark grey background color on hover */
     color: #007bff; /* Change text color on hover */
+}
+
+/* New media query for wide screens */
+@media (min-width: 768px) {
+    .banner img {
+        height: 50vh; /* Set the height to 50% of the viewport height */
+        object-fit: cover; /* Ensures the image covers the area without distortion */
+    }
 }
