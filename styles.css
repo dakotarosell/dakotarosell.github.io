@@ -54,10 +54,51 @@ header {
     color: #007bff; /* Change text color on hover */
 }
 
-/* New media query for wide screens */
+/* New Navigation Bar Styles */
+.main-nav {
+    background-color: #333; /* Dark background for the nav bar */
+    color: white;
+    position: fixed; /* Fix the nav bar at the top */
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1000; /* Ensure the nav bar stays above other content */
+    padding: 10px 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px; /* Space between nav items */
+}
+
+.main-nav li {
+    margin: 0;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: #007bff; /* Change text color on hover */
+}
+
+/* Main content */
+.content {
+    padding-top: 60px; /* Add padding to avoid content being hidden under the nav bar */
+}
+
+/* Media query for wide screens */
 @media (min-width: 768px) {
     .banner img {
-        height: 30vh; /* Set the height to 50% of the viewport height */
-        object-fit: contain; /* Ensures the image covers the area without distortion */
+        height: 30vh; /* Set the height to 30% of the viewport height */
+        object-fit: contain; /* Ensure the entire image fits within the area */
     }
 }
