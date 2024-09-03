@@ -101,14 +101,21 @@ header {
 
 /* Centering the new image */
 .coming-soon-image {
-    text-align: center; /* Center-aligns the image within the container */
+    text-align: center;
     margin: 20px 0;
 }
 
 .coming-soon-image img {
-    display: inline-block; /* Ensures the image is treated as an inline block for centering */
+    display: inline-block;
     max-width: 100%;
     height: auto;
+}
+
+/* Adding a white line between the Coming Soon image and the social media links */
+.separator-line {
+    border-top: 2px solid white; /* Thickness of the line */
+    width: 100%;
+    margin: 20px 0; /* Spacing around the line */
 }
 
 /* Main content */
