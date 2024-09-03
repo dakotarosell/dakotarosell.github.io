@@ -81,7 +81,7 @@ header {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 30px;
+    gap: 40px; /* Increase spacing between navigation items */
 }
 
 .main-nav li {
