@@ -141,8 +141,6 @@ header {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
-    justify-content: center;
-    align-items: center;
     z-index: 2000;
 }
 
@@ -153,7 +151,10 @@ header {
     border: 2px solid white;
     border-radius: 5px;
     text-align: center;
-    position: relative;
+    position: absolute; /* Positioning within the popup container */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the content */
 }
 
 .popup-content a {
@@ -162,10 +163,11 @@ header {
 }
 
 .popup-close {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px; /* Add padding to make the border more visible */
+    border: 2px solid white; /* Border thickness same as navigation bar */
+    border-radius: 3px; /* Slightly rounded corners for the border */
     cursor: pointer;
     color: white;
     font-weight: bold;
