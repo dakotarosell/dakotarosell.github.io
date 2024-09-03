@@ -116,6 +116,7 @@ header {
     border-top: 2px solid white; /* Thickness of the line */
     width: 100%;
     margin: 20px 0; /* Spacing around the line */
+    background-color: black; /* Ensure background color is black to match the body */
 }
 
 /* Main content */
