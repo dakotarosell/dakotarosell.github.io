@@ -101,11 +101,12 @@ header {
 
 /* Centering the new image */
 .coming-soon-image {
-    text-align: center;
+    text-align: center; /* Center-aligns the image within the container */
     margin: 20px 0;
 }
 
 .coming-soon-image img {
+    display: inline-block; /* Ensures the image is treated as an inline block for centering */
     max-width: 100%;
     height: auto;
 }
