@@ -5,6 +5,7 @@ body {
     background-color: black;
     color: white;
     box-sizing: border-box;
+    text-transform: lowercase; /* Transform all text to lowercase */
 }
 
 *,
@@ -105,8 +106,8 @@ header {
 }
 
 .coming-soon-image img {
-    max-width: 100%; /* Make sure image fits within container */
-    height: auto;    /* Maintain aspect ratio */
+    max-width: 100%;
+    height: auto;
 }
 
 /* Main content */
