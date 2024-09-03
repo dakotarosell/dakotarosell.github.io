@@ -98,6 +98,17 @@ header {
     color: #007bff;
 }
 
+/* Centering the new image */
+.coming-soon-image {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.coming-soon-image img {
+    max-width: 100%; /* Make sure image fits within container */
+    height: auto;    /* Maintain aspect ratio */
+}
+
 /* Main content */
 .content {
     padding-top: 60px;
