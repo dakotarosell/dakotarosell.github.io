@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>koderzzz</title>
+    <title>koderzzz2</title>
     
     <!-- Favicon -->
     <link rel="icon" href="dakotarosell.github.io/favicon.ico" type="image/x-icon">
@@ -21,7 +21,7 @@
         <nav class="main-nav">
             <ul>
                 <li><a href="#music-downloads">Music Downloads</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact" id="contact-btn">Contact</a></li>
             </ul>
         </nav>
 
@@ -47,6 +47,14 @@
         </nav>
     </header>
 
+    <!-- Popup Modal -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <p>For commercial inquiries please contact me at <a href="mailto:officialkoderzzz@gmail.com">officialkoderzzz@gmail.com</a></p>
+            <span class="popup-close">cool</span>
+        </div>
+    </div>
+
     <!-- Main content here -->
     <div class="content">
         <section id="music-downloads">
@@ -59,5 +67,17 @@
             <p>Get in touch with me!</p>
         </section>
     </div>
+
+    <script>
+        // JavaScript to handle popup visibility
+        document.getElementById('contact-btn').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('popup').style.display = 'flex';
+        });
+
+        document.querySelector('.popup-close').addEventListener('click', function() {
+            document.getElementById('popup').style.display = 'none';
+        });
+    </script>
 </body>
 </html>
