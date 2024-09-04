@@ -182,16 +182,16 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    max-width: 80%; /* Ensure the popup content does not exceed the screen width */
 }
 
-.popup-content a {
-    color: white;
-    text-decoration: underline;
+.popup-content p {
+    margin: 0; /* Remove default margin around paragraphs */
 }
 
 .popup-close {
-    display: inline-block;
-    margin-top: 20px; /* Increased margin to move the button below the text */
+    display: block; /* Ensure it's a block element to be centered */
+    margin-top: 20px;
     padding: 5px 10px;
     border: 2px solid white;
     border-radius: 3px;
