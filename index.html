@@ -51,13 +51,14 @@
     </div>
 
     <script>
-        document.getElementById('popup-close').addEventListener('click', function () {
-            document.getElementById('contact-popup').style.display = 'none';
+        // JavaScript to handle popup visibility
+        document.getElementById('contact-btn').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('popup').style.display = 'flex';
         });
 
-        document.querySelector('a[href="#"]').addEventListener('click', function (e) {
-            e.preventDefault();
-            document.getElementById('contact-popup').style.display = 'block';
+        document.querySelector('.popup-close').addEventListener('click', function() {
+            document.getElementById('popup').style.display = 'none';
         });
     </script>
 </body>
