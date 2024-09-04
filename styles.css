@@ -123,16 +123,15 @@ header {
 .streaming-section {
     display: flex;
     align-items: center;
-    justify-content: center; /* Center both the image and text horizontally */
+    justify-content: center;
     margin: 20px 0;
-    text-align: center; /* Center text within the container */
+    text-align: center;
 }
 
 .streaming-image {
     width: 100px;
     height: 100px;
     padding: 10px;
-    border: 2px solid white;
     flex-shrink: 0;
 }
 
