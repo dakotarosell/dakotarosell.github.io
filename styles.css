@@ -191,7 +191,7 @@ header {
 
 .popup-close {
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 30px; /* Increased margin for additional space */
     padding: 3px 7px; /* Reduced padding for a tighter fit */
     border: 2px solid white;
     border-radius: 3px;
