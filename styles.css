@@ -161,13 +161,13 @@ header {
 
 /* Popup Modal styles */
 .popup {
-    display: none;
+    display: none; /* Hidden by default */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
     z-index: 2000;
 }
 
@@ -178,23 +178,23 @@ header {
     border: 2px solid white;
     border-radius: 5px;
     text-align: center;
-    position: absolute;
+    position: absolute; /* Positioning within the popup container */
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 80%;
+    transform: translate(-50%, -50%); /* Center the content */
 }
 
-.popup-content p {
-    margin: 0;
+.popup-content a {
+    color: white;
+    text-decoration: underline;
 }
 
 .popup-close {
     display: inline-block;
-    margin-top: 20px;
-    padding: 3px 7px; /* Reduced padding for a tighter fit */
-    border: 2px solid white;
-    border-radius: 3px;
+    margin-top: 10px;
+    padding: 5px 10px; /* Add padding to make the border more visible */
+    border: 2px solid white; /* Border thickness same as navigation bar */
+    border-radius: 3px; /* Slightly rounded corners for the border */
     cursor: pointer;
     color: white;
     font-weight: bold;
