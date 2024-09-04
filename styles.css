@@ -191,7 +191,7 @@ header {
 
 .popup-close {
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 20px; /* Increased margin to move the button below the text */
     padding: 5px 10px;
     border: 2px solid white;
     border-radius: 3px;
