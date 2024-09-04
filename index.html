@@ -14,54 +14,50 @@
                 <img src="dakotarosell.github.io/res/site banner.png" alt="banner image">
             </a>
         </div>
-        <div class="main-nav">
+        <nav class="main-nav">
             <ul>
-                <li><a href="#">music downloads</a></li>
-                <li><a href="#" id="contact-btn">contact</a></li>
+                <li><a href="https://koderzzz.com/downloads">music downloads</a></li>
+                <li><a href="#">contact</a></li>
             </ul>
-        </div>
-        <!-- Profile image is commented out as per previous instructions -->
-        <!-- <div class="profile-image-container">
-            <img src="dakotarosell.github.io/res/headshot.png" alt="profile image" class="profile-image">
-        </div> -->
+        </nav>
     </header>
+
     <div class="coming-soon-image">
-        <img src="dakotarosell.github.io/res/abandon self coming soon.png" alt="coming soon image">
+        <img src="dakotarosell.github.io/res/abandon self coming soon.png" alt="coming soon">
     </div>
+
     <div class="separator-line"></div>
+
     <nav class="social-media">
-        <a href="https://www.tiktok.com/@koderzzzofficial" target="_blank" class="social-link">tiktok</a>
-        <a href="https://soundcloud.com/koderzzz" target="_blank" class="social-link">soundcloud</a>
-        <a href="https://www.instagram.com/koderzzzofficial/" target="_blank" class="social-link">instagram</a>
+        <a href="https://www.tiktok.com/@koderzzzofficial" class="social-link">tiktok</a>
+        <a href="https://soundcloud.com/koderzzz" class="social-link">soundcloud</a>
+        <a href="https://www.instagram.com/koderzzzofficial/" class="social-link">instagram</a>
     </nav>
 
-    <!-- New section below social media links -->
     <div class="streaming-section">
         <div class="streaming-image">
-            <img src="dakotarosell.github.io/res/headshot.png" alt="streaming profile image">
+            <img src="dakotarosell.github.io/res/headshot.png" alt="streaming platforms">
         </div>
         <div class="streaming-text">
-            <p>on all streaming platforms</p>
+            on all streaming platforms
         </div>
     </div>
 
-    <!-- Popup Modal -->
-    <div class="popup" id="popup">
+    <div class="popup" id="contact-popup">
         <div class="popup-content">
-            <p>for commercial inquiries please contact me at <a href="mailto:officialkoderzzz@gmail.com">officialkoderzzz@gmail.com</a></p>
-            <span class="popup-close">cool</span>
+            for commercial inquiries, please contact me at officialkoderzzz@gmail.com
+            <div class="popup-close" id="popup-close">cool</div>
         </div>
     </div>
 
     <script>
-        // JavaScript to handle popup visibility
-        document.getElementById('contact-btn').addEventListener('click', function(event) {
-            event.preventDefault();
-            document.getElementById('popup').style.display = 'flex';
+        document.getElementById('popup-close').addEventListener('click', function () {
+            document.getElementById('contact-popup').style.display = 'none';
         });
 
-        document.querySelector('.popup-close').addEventListener('click', function() {
-            document.getElementById('popup').style.display = 'none';
+        document.querySelector('a[href="#"]').addEventListener('click', function (e) {
+            e.preventDefault();
+            document.getElementById('contact-popup').style.display = 'block';
         });
     </script>
 </body>
