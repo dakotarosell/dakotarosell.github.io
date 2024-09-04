@@ -182,17 +182,17 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    max-width: 80%;
 }
 
-.popup-content a {
-    color: white;
-    text-decoration: underline;
+.popup-content p {
+    margin: 0;
 }
 
 .popup-close {
     display: inline-block;
-    margin-top: 10px;
-    padding: 5px 10px;
+    margin-top: 20px;
+    padding: 3px 7px; /* Reduced padding for a tighter fit */
     border: 2px solid white;
     border-radius: 3px;
     cursor: pointer;
