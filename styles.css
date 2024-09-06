@@ -199,3 +199,12 @@ header {
     color: white;
     font-weight: bold;
 }
+
+.countdown-container {
+    text-align: center;
+}
+
+.countdown {
+    display: inline-block;
+    width: auto;
+}
