@@ -35,5 +35,18 @@
     <div class="coming-soon">
         <p>coming soon</p>
     </div>
+
+    <script>
+        // JavaScript to handle popup visibility
+        document.getElementById('contact-btn').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('popup').style.display = 'flex';
+        });
+
+        document.querySelector('.popup-close').addEventListener('click', function() {
+            document.getElementById('popup').style.display = 'none';
+        });
+    </script>
+    
 </body>
 </html>
